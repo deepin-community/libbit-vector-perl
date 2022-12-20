@@ -1,0 +1,29 @@
+Source: libbit-vector-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Christian Hammers <ch@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>,
+           Florian Schlichting <fsfs@debian.org>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Priority: optional
+Build-Depends: perl,
+               debhelper (>= 9.20120312),
+               libcarp-clan-perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libbit-vector-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libbit-vector-perl.git
+Homepage: https://metacpan.org/release/Bit-Vector
+Testsuite: autopkgtest-pkg-perl
+
+Package: libbit-vector-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         ${perl:Depends},
+         libcarp-clan-perl
+Description: Perl module for bit vectors and more
+ Bit::Vector is a module that allows you to handle bit vectors, integer sets,
+ "big integer arithmetic" and boolean matrices, all of arbitrary sizes. It is
+ efficient (in terms of algorithmic complexity) and therefore fast (in terms
+ of execution speed). It also provides overloaded operators for ease of use.
